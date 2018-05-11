@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to Provider Support</h1>
+</div>
+<div class="container">
+    <div>
+        <h3>Provider Support makes it easy to manage:</h3>        
+        <ul>
+            <li>Your providers</li>
+            <li>Your Clients</li>
+            <li>Your service transactions</li>
+            <li>Your invoicing</li>
+        </ul>
+        <h5><em>Select an item from the menu above to start.</em></h5>
+        <p></p>
+    </div>
+
+    <hr />
+    <div>        
+        <h3>System Stats</h3>
+        <ul>
+            <li>Number of Providers: @ViewBag.ProviderCount</li>
+            <li>Number of Clients: @ViewBag.ClientCount</li>
+            <li>Number of Transactions: @ViewBag.TransactionCount</li>        
+        </ul>
+    </div>   
+</div>

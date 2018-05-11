@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ProviderSupport.ViewModels.BirthDateGroup>
+@{
+    ViewBag.Title = "Provider Support Statistics";
+}
+
+<h2>Provider Support Statistics</h2>
+
+<table>
+    <tr>
+        <th>
+            CPR Expiration Date
+        </th>
+        <th>   </th>
+        <th>
+            Providers
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CprExpDate)
+            </td>
+            <td>   </td>
+            <td class="text-center">
+                @item.ProviderCount
+            </td>
+        </tr>
+    }
+</table>

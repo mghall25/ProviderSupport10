@@ -1,0 +1,106 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 900px;
+}
+
+/* ============================ Navbar ============================ */
+.navbar-nav li a,
+.navbar-nav li a:hover {
+    /*color: white !important;*/
+    text-decoration: none;
+    padding: 15px 10px 15px 0px;
+    font-size: 1.35rem;
+}
+
+.navbar-nav li a {
+    color: white;
+}
+
+.navbar-nav li a:hover,
+.navbar-dark .navbar-brand:hover {
+    color: #ccc;
+}
+
+/* ============================ INPUT FORMS ============================ */
+/* Input forms - when large, labels to the left of the input box */
+/*.editor label {
+    float: left;
+    min-width: 150px;
+    text-align: right;
+}
+
+.editor input,
+.editor select {
+    margin: 0 0 0 10px;
+}
+*/
+
+.editor input[type=text] {
+    width: 400px;
+}
+.editor select {
+    width: 300px;
+}
+.editor input[type=date],
+.editor input[type=datetime]{
+    width: 200px;
+}
+.editor input[type=time],
+.editor input[type=number]{
+    width: 100px;
+}
+
+.form-group {
+    /*margin-bottom: 1rem;*/
+   /* display:block; */
+    line-height: 1.5rem;
+}
+
+.input-line,
+.input-line .form-group{
+    display: inline-block;
+}
+
+#ProgressNote {
+    width: 100%;
+}
+
+/* Input Forms - when small */
+@media screen and (max-width: 768px) {
+    /* forms - adjust layout */
+    .form-group {
+        /*margin-bottom: 1rem;*/
+        display:block;
+        line-height: 1.5rem;
+    }
+    .editor label {
+        float:none;
+        width:auto;
+        text-align: left;
+    }
+    .editor input,
+    .editor select {
+        margin: 0;
+    }
+    
+}
